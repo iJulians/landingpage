@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>INDEX - Excelência em EXCEL</title>
   <link rel="stylesheet" href="https://use.typekit.net/caj1lhh.css">
 
   <script src="https://kit.fontawesome.com/b4ee1c271e.js" crossorigin="anonymous"></script>
 <style>
   :root {
+    --header-height: 4.5rem;
+    --footer-height: 10rem;
     --color-background: #2d2a32;
     --color-font: #FFFBFE;
     --color-font2: #FAFDF6;
@@ -27,27 +29,54 @@
   }
 
   body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     font-family: 'nunito';
+    overflow-x: hidden;
   }
 
   .container {
     width: 100%;
     height: 100vh;
-    padding: 50px;
+    padding: 3.125rem;
   }
+/* header ------------------------------------------------- */
 
-  header {
-    background: linear-gradient(var(--color-background),var(--color-var));
-  }
-
-  nav {
-    width: 100%;
+  .background-header {
+    backdrop-filter: blur(10px);
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: blur(10px);
+    height: var(--header-height);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+/* logo ----------------------------------------------------------- */
+  .logo {
+    text-decoration: none;
+    color: var(--color-var);
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 2.5rem;
+  }
+
+  .logo span {
+    color: var(--color-font2);
+    font-size: 2.5rem;
+    margin-left: .2rem;
+    font-weight: bold;
+  }
+
+/* navigation ------------------------------------------------- */
+  nav {
+    width: 90%;
+    display: flex;
+    padding-left: .125rem;
+    padding-top: 2rem;
   }
 
   nav ul {
@@ -61,6 +90,39 @@
     text-decoration: none;
     color: var(--color-font);
     font-size: 1.2rem;
+    position: relative;
+    font-weight: 600;
+    transition: color 0.2s;
+    letter-spacing: .125rem;
+  }
+
+  nav ul li a:hover,
+  nav ul li a:active {
+    color: var(--color-var);
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 0.125rem;
+    background: var(--color-var);
+    left: 0;
+    bottom: -1rem;
+
+    transition: width 0.2s;
+
+    position: absolute;
+  }
+
+
+  nav ul li a:hover::after,
+  nav ul li a:active::after {
+    width: 100%;
+  }
+
+  /* home -------------------------------------------- */
+  .home {
+    background: var(--color-background);
   }
   .container-copywriting {
     display: flex;
@@ -105,12 +167,16 @@
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
-     rgba(0, 0, 0, 0.07) 0px 2px 4px,
-     rgba(0, 0, 0, 0.07) 0px 4px 8px,
-     rgba(0, 0, 0, 0.07) 0px 8px 16px,
-     rgba(0, 0, 0, 0.07) 0px 16px 32px,
-     rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: all 400ms;
+  }
+
+  .copywriting a:hover {
+    box-shadow: rgba(255, 250, 254, 0.7) 0px 1px 2px,
+     #00000012 0px 2px 4px,
+     rgba(255, 250, 254, 0.5) 0px 4px 8px,
+     rgba(255, 250, 254, 0.4) 0px 8px 16px,
+     rgba(255, 250, 254, 0.3) 0px 16px 32px,
+     rgba(255, 250, 254, 0.02) 0px 32px 64px;
   }
 
   figure {
@@ -140,13 +206,12 @@
 /* ----------------------services----------------------------- */
 
 .service {
-  background: linear-gradient(var(--color-var), var(--color-font2));
-  margin-bottom: 10vh;
+  background: linear-gradient(var(--color-background),var(--color-var));
 }
 
 .service h2{
   color: #fff;
-  padding: 1em;
+  padding: 2em;
   letter-spacing: 1px;
   font-weight: 900;
   font-style: italic;
@@ -192,19 +257,78 @@
   font-size: 2rem;
   text-align: center;
 }
+
+/* footer----------------------------------------------------- */
+footer {
+  background: var(--color-background);
+  display: flex;
+  align-items: center;
+}
+
+.container-footer {
+  width: 100%;
+  padding: 2rem 4.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.brand .logo {
+  font-size: 3rem;
+}
+.brand .logo-alt {
+  color: var(--color-font);
+}
+
+.brand .logo-alt span{
+  color: var(--color-var);
+  font-size: 4rem;
+}
+
+.brand p {
+  padding-left: 2.5rem;
+  color: var(--color-font2);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social a {
+  text-decoration: none;
+  color: var(--color-font);
+  font-size: 2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.social a:hover {
+  color: var(--color-var);
+  transform: scale(1.5);
+}
+
 </style>
 </head>
 <body>
-  <header id="home" class="container">
-    <nav class="container-nav">
-      <a href="#"><img src="" alt="logo da empresa de consultoria"></a>
-      <ul class="navegation">
-        <li class="navegation-iten"><a href="#home">Início</a></li>
-        <li class="navegation-iten"><a href="#services">Serviços</a></li>
-        <li class="navegation-iten"><a href="#partners">Clientes</a></li>
-        <li class="navegation-iten"><a href="#contact">Contatos</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="background-header">
+      <a href="#" class="logo">INDE<span>X</span>.</a>
+      <nav class="container-nav">
+        <ul class="navegation">
+          <li class="navegation-iten"><a href="#home">Início</a></li>
+          <li class="navegation-iten"><a href="#services">Serviços</a></li>
+          <!-- <li class="navegation-iten"><a href="#partners">Clientes</a></li> -->
+          <li class="navegation-iten"><a href="#contact">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+  <section id="home" class="container home">
     <div class="container-copywriting">
       <div class="copywriting">
         <p>Transforme dados em insights estratégicos, automatizando relatórios no Excel e 
@@ -219,8 +343,7 @@
         <img src="assets/astronauta.png" alt="astronauta deitado usando um notebook" class="astronauta">
       </figure>
     </div>
-  </header>
-  <main>
+    </section>
     <section class="container service" id="services">
       <h2>SERVIÇOS</h2>
       <div class="container-cards">
@@ -254,8 +377,27 @@
         </article>
       </div>
     </section>
-    <section class="container clientes" id="partners"></section>
+    <!-- <section class="container clientes" id="partners"></section> -->
   </main>
-  <footer></footer>
+  <footer>
+    <div class="container-footer">
+      <div class="brand">
+        <a href="#home" class="logo logo-alt">INDE<span>X</span>.</a>
+        <p>©2023 INDEX.</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+      <div class="social">
+        <a href="#" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
