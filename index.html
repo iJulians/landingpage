@@ -225,12 +225,11 @@
 
 .service h2{
   color: #fff;
-  padding: 2em;
+  padding: 2rem;
   letter-spacing: 1px;
   font-weight: 900;
   font-style: italic;
   text-align: left;
-  line-height: 1.2;
   border-radius: 10px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.
   5), 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -250,7 +249,6 @@
 .card {
   width: var(--card-width);
   height: var(--card-height);
-  padding: 3px;
   position: relative;
   border-radius: 20px;
   justify-content: center;
@@ -258,7 +256,6 @@
   text-align: center;
   display: flex;
   font-size: 1.5em;
-  cursor: pointer;
   font-family: nunito;
   z-index: 0;
   overflow: hidden;
@@ -285,7 +282,7 @@
           #00d7f5 87.5%, 
           #00d3ff 93.75%, 
           #00d0ff 100%);
-  width: 100%;
+  width: 95%;
   height: 200%;
   animation: spin 10s infinite ease-in-out;
   z-index: -1;
@@ -313,29 +310,40 @@
   gap: 3rem;
   align-items: center;
   justify-content: center;
+  padding: .5rem;
 }
 
 .card-content i {
   font-size: 10rem;
   color: var(--color-font2);
+  transition: all 300ms;
 }
 
 .card-content h4 {
   color: var(--color-font2);
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .card-content p {
-  display: none;
   padding: 1.125rem;
   color: var(--color-font2);
-  
-  transition: all 5s ease-in-out;
+  font-size: 0rem;
+  transform: all 300ms;
+}
+.card-content:hover {
+  scale: .97;
+}
+.card-service:hover > .card-content i {
+  font-size: 7rem;
+}
+
+.card-service:hover > .card-content h4 {
+  font-size: 1.5rem;
 }
 
 .card-service:hover > .card-content p {
-  display: block;
-  
+  font-size: 1.3rem;
 }
 
 
