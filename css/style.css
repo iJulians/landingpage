@@ -117,7 +117,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    bottom: 0;
+    bottom: 2%;
 }
 
 .divisor h5 {
@@ -209,19 +209,19 @@ footer {
     .container-copy {
         display: flex;
         flex-direction: column-reverse;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     .copywriting {
-        width: 90%;
+        width: 60%;
     }
 
     .logo {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .logo span {
-        font-size: 5rem
+        font-size: 4rem
     }
 
     .copywriting p {
