@@ -116,7 +116,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
     bottom: 0;
 }
 
@@ -204,6 +203,259 @@ footer {
     font-size: 7rem;
 }
 
+@media screen and (max-width: 600px) {
+    .container-copy {
+        display: block;
+        position: relative;
+    }
+
+    .copywriting {
+        height: 50%;
+        width: 90%;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .img-copy{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+
+    .logo {
+        margin: 0 auto;
+        font-size: 4rem;
+    }
+
+    .logo span {
+        font-size: 5rem
+    }
+
+    .copywriting p {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .btn {
+        font-size: .9rem;
+    }
+
+    .divisor h5 {
+        font-size: 1rem;
+    }
+
+    /* SECTION SERVICES --------------------------------------------- */
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service h2 {
+        color: var(--color-font);
+    }
+
+    .container-cards {
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .cards {
+        display: flex;
+        height: 100%;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        display: flex;
+        gap: 2rem;
+        background-color: var(--color-btn);
+        height: 190px;
+        border-radius: 1rem;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        color: var(--color-font);
+    }
+
+    .card-content i {
+        font-size: 2.5rem;
+    }
+
+    .card-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .card-content p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .btnPrevNext {
+        display: none;
+    }
+
+
+    /* FOOTER ------------------------------------------------------------ */
+
+    footer {
+        height: 20rem;
+    }
+    .container-footer {
+        display: felx;
+        flex-direction: column;
+        padding: auto;
+    }
+
+    .brand {
+        margin: 0 auto;
+    }
+
+    .logo-alt {
+        font-size: 2.5rem;
+    }
+
+    .logo-alt span {
+        font-size: 3.5rem;
+    }
+
+    .social {
+        margin: 0 auto;
+        padding: 1rem 0rem;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+    /* SECTION HERO------------------------------------------- */
+
+    .logo {
+        font-size: 5rem;
+    }
+
+    .logo span {
+        font-size: 7rem;
+    }
+
+    .copywriting p {
+        font-size: 1.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 1.6rem;
+    }
+
+    .divisor h5 {
+        font-size: 1.2rem;
+    }
+
+    .divisor i {
+        font-size: 1.5rem;
+    }
+
+
+    /* SECTION SERVICES------------------------------------------- */
+    .service {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service h2 {
+        width: 100%;
+        color: var(--color-font);
+        margin-bottom: 2rem;
+    }
+
+    .container-cards {
+       width: 50%;
+       height: 50%;
+       position: relative;
+       margin-top: 5rem;
+       border-radius: 1rem;
+       
+    }
+
+    .cards {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        border-radius: 1rem;
+        
+    }
+
+    .card {
+        display: flex;
+        flex: 0 0 100%;
+
+        background-color: var(--color-btn);
+        border-radius: 1rem;
+        /* margin-right: 1rem; */
+        transform: translateX(-200%);
+        
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        border-radius: 1rem;
+        color: var(--color-font);
+        font-size: 1.5rem;
+        font-size-adjust: 0.58;
+        text-align: center;
+    }
+
+    .btnPrevNext {
+        position: absolute;
+        width: 120%;
+        height: 100%;
+        left: -10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .prev, .next {
+        background-color: transparent;
+        backdrop-filter: blur(6px);
+        border: none;
+        border-radius: 50%;
+    }
+
+    .prev i, .next i {
+        font-size: 2rem;
+        color: var(--color-font);
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
     /* SECTION SERVICES------------------------------------------- */
     .service h2 {
@@ -219,7 +471,7 @@ footer {
         height: 250px;
         position: relative;
         perspective: 1000px;
-        margin-top: 20rem;
+        margin-top: 10rem;
         /* 
         https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=contain&range-start-percentage=0&range-end-name=contain&range-end-percentage=50&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=fly-in&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes
             informacção do efeito scroll nativo
@@ -335,3 +587,6 @@ footer {
         scale: .5;
     }
 }
+
+
+
