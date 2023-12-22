@@ -151,7 +151,6 @@ body {
 .service {
     height: 100vh;
     height: 100svh;
-    height: -webkit-fill-available;
     width: 100%;
 }
 
