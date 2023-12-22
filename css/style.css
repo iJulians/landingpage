@@ -205,29 +205,16 @@ footer {
 
 @media screen and (max-width: 600px) {
     .container-copy {
-        display: block;
-        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
     }
 
     .copywriting {
-        height: 50%;
         width: 90%;
-        position: absolute;
-        bottom: 20%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .img-copy{
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        
     }
 
     .logo {
-        margin: 0 auto;
         font-size: 4rem;
     }
 
@@ -238,7 +225,7 @@ footer {
     .copywriting p {
         font-size: 2rem;
         text-align: center;
-        margin-top: 2rem;
+
     }
 
     .btn {
@@ -262,10 +249,10 @@ footer {
     }
 
     .container-cards {
-        height: 90%;
+        height: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 1rem;
+        margin-top: .5rem;
     }
 
     .cards {
@@ -587,6 +574,5 @@ footer {
         scale: .5;
     }
 }
-
 
 
