@@ -412,7 +412,7 @@ footer {
         background-color: var(--color-btn);
         border-radius: 1rem;
         /* margin-right: 1rem; */
-        transform: translateX(-200%);
+        transform: translateX(0);
         
     }
 
