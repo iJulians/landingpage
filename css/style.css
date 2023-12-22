@@ -47,7 +47,7 @@ body {
 
 .container-copy {
     padding: 2rem;
-    height: 95%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
