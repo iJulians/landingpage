@@ -55,6 +55,7 @@ body {
 
 .copywriting {
     width: 50%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +67,7 @@ body {
 
     color: var(--color-btn);
 
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
 }
 
 .logo span {
@@ -93,11 +94,13 @@ body {
 }
 
 .img-copy {
-    width: 50%;
+    width: 30%;
+    height: 40%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: red;
 }
 
 .img-copy img {
