@@ -1,9 +1,9 @@
 carousel = document.querySelector('.cards')
 cards = document.querySelectorAll('.card')
 let degValue = 0
-let wDevice = window.innerWidth
-function rotate(idButton) {
 
+function rotate(idButton) {
+    let wDevice = window.innerWidth
     if (wDevice >= 1024){
         
         if(idButton.id == 'prev'){
