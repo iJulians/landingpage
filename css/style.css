@@ -267,7 +267,7 @@ footer {
 
     .cards {
         display: grid;
-        grid-template-rows: 5% 95%;
+        grid-template-rows: 20% 80%;
         place-items: center;
         place-content: center;
         height: 100%;
