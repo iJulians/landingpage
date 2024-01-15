@@ -266,10 +266,8 @@ footer {
     }
 
     .cards {
-        display: grid;
-        grid-template-rows: 20% 80%;
+        display: inline-block;
         place-items: center;
-        place-content: center;
         height: 100%;
         width: 80%;
     }
@@ -280,6 +278,7 @@ footer {
         background-color: var(--color-btn);
         height: 190px;
         border-radius: 1rem;
+        margin-bottom: 1rem;
     }
 
     .card-content {
