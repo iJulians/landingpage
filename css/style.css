@@ -153,8 +153,8 @@ body {
 /* SERVICES ------------------------------------ */
 
 .service {
-    height: 100vh;
-    height: 100svh;
+    height: 150vh;
+    height: 150svh;
     width: 100%;
 }
 
