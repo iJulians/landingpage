@@ -397,7 +397,6 @@ footer {
         height: 100%;
         position: absolute;
         display: flex;
-        overflow: hidden;
         border-radius: 1rem;
         
     }
